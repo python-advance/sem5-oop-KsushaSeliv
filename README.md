@@ -84,7 +84,11 @@ class guest():
     else: #иначе записываем, что email был создан
       self.log.append ("Всё хорошо")
       self._email = value
-
+      
+  @email.getter
+  def email(self):
+        return self._email
+        
   def otvetinfo(self): #записываем все наши данные
      self.information = {"name": self.name,"sname": self.sname,"email": self.email,"age": self.age,}
      return self.information
