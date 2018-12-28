@@ -15,9 +15,9 @@ class zapis:
 
     def show_comments(self):
         for comment in self.comments:
-            comments_string = comment.stroka() + comments_string
-        return comments_string
-
+            comment.show()
+            print()
+            
     @property #специальное свойство, которое позволяет как раз таки создать эти геттеры, сеттеры
     def comment(self):
         return self._comment
