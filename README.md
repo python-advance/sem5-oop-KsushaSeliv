@@ -14,7 +14,6 @@ class zapis:
         return ("Автор: " + str(self.author) + "\n" + "Комментарий: " + str(self._comment) + "\n")
 
     def show_comments(self):
-        comments_string = ""
         for comment in self.comments:
             comments_string = comment.stroka() + comments_string
         return comments_string
